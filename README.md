@@ -99,6 +99,6 @@ See [`docs/design-system.md`](docs/design-system.md): color tokens, typography, 
 
 ## Deploy
 
-- **Web → Vercel:** set the project root to `econpath/web`. Env: `NEXT_PUBLIC_SITE_URL`.
-- **API → Render / Railway / Fly.io:** build with `api/Dockerfile` from the `econpath/` context. Env: `ECONPATH_DATA_BACKEND`, `ECONPATH_DATABASE_URL`, `ECONPATH_CORS_ORIGINS`.
+- **Web → Vercel:** set the project root to `web`. Env: `NEXT_PUBLIC_SITE_URL`.
+- **API → Render / Railway / Fly.io:** build with `api/Dockerfile` from the repository root. Env: `ECONPATH_DATA_BACKEND`, `ECONPATH_DATABASE_URL`, `ECONPATH_CORS_ORIGINS`.
 - No secrets are committed; see `web/.env.example` and `api/.env.example`.
